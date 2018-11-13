@@ -1,0 +1,96 @@
+body{
+    text-align: center;
+    color: white;
+    background-color: black;
+  }
+  
+  #image {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+  }
+
+  #img-caption {
+    margin-top: 10px;
+  }
+
+  hr {
+      border:0;
+      margin: 30px auto;
+      width:65%;
+      height:1px;
+      background:#505050;
+  }
+
+  h1{
+    margin: 30px auto 50px auto;
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  p {
+    width: 55%;
+    margin: 20px auto;
+    text-align: justify;
+    font-size: 1.5em;
+  }
+
+/* Decided to create a container with a grid area to display pictures by bullet points*/
+
+  #ul-container {
+    margin: 20px auto;
+    width: 55%;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+    grid-template-areas:
+      "img1 ul"
+      "img2 ul"
+      "img3 ul";
+  }
+
+  #img-1 {
+    grid-area: img1;
+    width:45%;
+    justify-self: center;
+  }
+
+  #img-2 {
+    grid-area: img2;
+    width:75%;
+    justify-self: center;
+  }
+
+  #img-3 {
+    grid-area: img3;
+    width:100%;
+    justify-self: center;
+  }
+
+  ul {
+    font-size: 1.5em;
+    text-align: justify;
+    grid-area: ul;
+    margin-top: 5px;
+  }
+  li {
+      margin-bottom: 20px;
+  }
+
+  a {
+    display: block;
+    margin: 30px auto;
+  }
+
+  #link-div {
+    background: url("https://images6.alphacoders.com/430/430201.jpg");
+    background-size: 45%;
+    background-repeat: no-repeat;
+    width: 42%;
+    margin: auto;
+    padding-top: 3%;
+    background-position: right;
+  }
